@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5546e8">
+<title>naitsirihc – Gemeinsam mehr erleben</title>
+<style>
+:root{--purple:#5546e8;--purple2:#7868ff;--ink:#182044;--muted:#66708c;--bg:#f6f7ff;--card:#fff;--line:#e7e9f5;--green:#16845b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1120px;margin:auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:1.45rem;letter-spacing:-.04em}.logo{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--purple),#a18aff);display:grid;place-items:center;color:#fff;font-size:21px}.navlinks{display:flex;gap:8px}.navlinks button,.btn{border:0;border-radius:12px;padding:11px 15px;font-weight:700}.navlinks button{background:transparent;color:var(--muted)}.navlinks button:hover{background:#f0efff;color:var(--purple)}.btn{background:var(--purple);color:#fff;box-shadow:0 5px 14px #5546e82b}.btn.secondary{background:#efedff;color:var(--purple);box-shadow:none}.hero{padding:42px 0 25px;background:radial-gradient(ellipse at 80% 0%,#e5e1ff,transparent 46%)}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center}.eyebrow{color:var(--purple);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.hero h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.02;letter-spacing:-.06em;margin:12px 0}.hero p{color:var(--muted);font-size:1.08rem;line-height:1.65;max-width:600px}.hero-art{background:linear-gradient(145deg,#5a49e8,#a99aff);color:white;border-radius:28px;padding:24px;min-height:220px;box-shadow:0 20px 45px #5546e82b}.hero-art .big{font-size:3.2rem}.hero-art h3{font-size:1.4rem;margin:8px 0}.hero-art p{color:#f1efff;font-size:.95rem;margin:0}.searchbox{margin-top:20px;background:#fff;border:1px solid var(--line);padding:9px;border-radius:17px;display:flex;gap:8px;box-shadow:0 8px 24px #1c25500b}.searchbox input{min-width:0;flex:1;border:0;outline:0;padding:8px 10px}.section{padding:25px 0 42px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:17px}.section h2{margin:0;font-size:1.55rem;letter-spacing:-.035em}.sub{color:var(--muted);margin:7px 0 0}.chips{display:flex;gap:8px;overflow:auto;padding:2px 0 15px}.chip{border:1px solid var(--line);border-radius:999px;background:white;padding:9px 14px;color:var(--muted);white-space:nowrap;font-weight:700}.chip.active{background:var(--purple);border-color:var(--purple);color:white}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.event{background:var(--card);border:1px solid var(--line);border-radius:19px;overflow:hidden;box-shadow:0 5px 20px #1c255008;display:flex;flex-direction:column}.event-top{height:112px;padding:17px;display:flex;justify-content:space-between;align-items:start;background:linear-gradient(135deg,#d9d5ff,#f2edff)}.event:nth-child(3n+2) .event-top{background:linear-gradient(135deg,#d4f6e8,#effcf6)}.event:nth-child(3n) .event-top{background:linear-gradient(135deg,#ffe7d1,#fff5e8)}.emoji{font-size:2.5rem}.tag{font-size:.75rem;font-weight:800;background:#ffffffc9;padding:7px 9px;border-radius:999px}.event-body{padding:17px;display:flex;flex-direction:column;gap:9px;flex:1}.event h3{margin:0;font-size:1.12rem}.meta{color:var(--muted);font-size:.88rem;line-height:1.5}.event p{margin:0;color:#48516e;line-height:1.5;font-size:.92rem}.event-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:7px}.smallbtn{border:0;border-radius:10px;padding:9px 11px;background:#efedff;color:var(--purple);font-weight:800}.panel{background:white;border:1px solid var(--line);border-radius:22px;padding:23px;margin:12px 0 40px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.88rem;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid #dfe2f0;border-radius:11px;padding:12px;background:#fff;outline-color:var(--purple)}.field textarea{min-height:85px;resize:vertical}.note{font-size:.86rem;color:var(--muted);line-height:1.5}.empty{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);background:#fff;border:1px dashed #d8d9ed;border-radius:16px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#172044;color:#fff;padding:13px 18px;border-radius:13px;box-shadow:0 8px 30px #0002;z-index:10;display:none;max-width:90vw}.footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:.88rem}.footer-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.upload-help{font-size:.82rem;color:var(--muted);line-height:1.45;margin:0}
+.media-preview{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.media-preview img,.media-preview video{width:120px;height:90px;object-fit:cover;border-radius:12px;border:1px solid var(--line);background:#f2f3fb}
+.pill-note{display:inline-flex;align-items:center;gap:6px;background:#eefaf4;color:#16734f;border-radius:999px;padding:6px 10px;font-size:.78rem;font-weight:750}
+
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:160px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks button:not(:last-child){display:none}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding-top:30px}}
+@media(max-width:480px){.wrap{padding:0 14px}.grid{grid-template-columns:1fr}.event-top{height:92px}.nav{height:62px}.brand{font-size:1.25rem}.searchbox{flex-wrap:wrap}.searchbox input{flex-basis:100%}.searchbox .btn{width:100%}.section-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="brand"><span class="logo">✦</span><span>naitsirihc</span></div>
+  <nav class="navlinks" aria-label="Navigation"><button onclick="scrollToSection('discover')">Entdecken</button><button onclick="scrollToSection('add')">Aktivität eintragen</button><button class="btn" onclick="showInfo()">Mitmachen</button></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div><div class="eyebrow">Deine Stadt. Deine Leute. Deine Erlebnisse.</div><h1>Entdecke Neues.<br>Finde deine Leute.</h1>
+  <p>Finde Aktivitäten, lerne Menschen mit ähnlichen Interessen kennen und entdecke Vereine, Hobbys und Festivals in deiner Nähe.</p>
+  <div class="searchbox"><input id="search" placeholder="z. B. Wandern, Musik, Ludwigshafen …" aria-label="Aktivitäten suchen"><button class="btn" onclick="renderEvents()">Suchen</button></div>
+  </div>
+  <div class="hero-art"><div class="big">🌍 ✨</div><h3>Gemeinsam mehr erleben.</h3><p>Ein neuer Ort, ein neues Hobby oder vielleicht eine neue Freundschaft – es beginnt mit einer Idee.</p></div>
+</div></section>
+<section class="section wrap" id="discover">
+ <div class="section-head"><div><h2>Was möchtest du erleben?</h2><p class="sub">Entdecke Ideen und Aktivitäten in deiner Umgebung.</p></div></div>
+ <div class="chips" id="filters">
+  <button class="chip active" data-cat="Alle">✨ Alles</button><button class="chip" data-cat="Outdoor">🥾 Outdoor</button><button class="chip" data-cat="Sport">⚽ Sport</button><button class="chip" data-cat="Kultur">🎨 Kultur</button><button class="chip" data-cat="Vereine">🤝 Vereine</button><button class="chip" data-cat="Festivals">🎵 Festivals</button><button class="chip" data-cat="Spiele">🎲 Spiele & Treffen</button>
+ </div>
+ <div class="grid" id="events"></div>
+</section>
+<section class="section wrap" id="add">
+ <div class="panel"><div class="section-head"><div><h2>Eine Aktivität hinzufügen</h2><p class="sub">Kennst du etwas, das andere nicht verpassen sollten? Teile es hier.</p></div></div>
+ <form id="eventForm" class="formgrid">
+  <div class="field"><label for="title">Name der Aktivität *</label><input id="title" required maxlength="70" placeholder="z. B. Feierabend-Wanderung"></div>
+  <div class="field"><label for="category">Kategorie *</label><select id="category" required><option value="Outdoor">Outdoor</option><option value="Sport">Sport</option><option value="Kultur">Kultur</option><option value="Vereine">Vereine</option><option value="Festivals">Festivals</option><option value="Spiele">Spiele & Treffen</option></select></div>
+  <div class="field"><label for="place">Ort / Stadt *</label><input id="place" required maxlength="80" placeholder="z. B. Ludwigshafen"></div>
+  <div class="field"><label for="date">Datum</label><input id="date" type="date"></div>
+  <div class="field"><label for="age">Dein Alter *</label><input id="age" type="number" required min="13" max="120" placeholder="z. B. 24"><p class="upload-help">Nur das Alter, nicht dein Geburtsdatum. In dieser Demo wird es nicht öffentlich auf der Aktivitätskarte angezeigt.</p></div>
+  <div class="field"><label for="members">Mitgliederzahl im Verein (optional)</label><input id="members" type="number" min="1" max="10000000" placeholder="z. B. 85"><p class="upload-help">Für Vereinsangebote – lass das Feld leer, wenn es nicht zutrifft.</p></div>
+  <div class="field full"><label for="description">Beschreibung *</label><textarea id="description" required maxlength="400" placeholder="Was passiert dort? Für wen ist es geeignet?"></textarea></div>
+  <div class="field full"><label for="photos">Bilder hinzufügen (optional)</label><input id="photos" type="file" accept="image/*" multiple><p class="upload-help">Wähle Fotos, die deine Aktivität oder deinen Verein zeigen. In dieser Demo werden sie nur als Vorschau angezeigt und nicht online hochgeladen.</p><div class="media-preview" id="photoPreview"></div></div>
+  <div class="field full"><label for="video">Willkommensvideo hinzufügen (optional)</label><input id="video" type="file" accept="video/*"><p class="upload-help">Zum Beispiel ein kurzes Video, in dem ihr euren Verein oder eure Aktivität vorstellt. Die Videodatei bleibt in dieser Demo auf deinem Gerät.</p><div class="media-preview" id="videoPreview"></div></div>
+  <div class="field full"><button class="btn" type="submit">Aktivität lokal speichern</button><p class="note">Demo-Hinweis: Einträge werden in diesem Browser gespeichert. Medien werden nur lokal als Vorschau gezeigt und sind noch nicht für andere Nutzer sichtbar. Für eine öffentliche Community brauchen wir später eine Online-Datenbank und einen sicheren Medien-Upload.</p></div>
+</form></div>
+</section>
+<section class="wrap" id="community"><div class="panel"><h2>Neue Leute kennenlernen</h2><p class="sub">Fang mit einer gemeinsamen Aktivität an – daraus können Gespräche, Gruppen und Freundschaften entstehen.</p><button class="btn secondary" onclick="showInfo()">So funktioniert naitsirihc</button><p class="note" style="margin-bottom:0">Profile, echte Nutzerkonten und privater Chat sind für die nächste Ausbaustufe vorgesehen.</p></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span><strong>naitsirihc</strong> · Gemeinsam mehr erleben.</span><span>Ein Community-Projekt in Entwicklung · Demo-Version</span></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const seed = [
+ {id:1,title:"Gemeinsam am Rhein spazieren",category:"Outdoor",place:"Ludwigshafen",date:"",description:"Eine entspannte Runde am Wasser – ideal, um frische Luft zu schnappen und neue Menschen kennenzulernen.",emoji:"🥾"},
+ {id:2,title:"Brettspiel-Abend für alle",category:"Spiele",place:"Mannheim",date:"",description:"Bring dein Lieblingsspiel mit oder lerne neue Spiele kennen. Anfängerinnen und Anfänger sind willkommen.",emoji:"🎲"},
+ {id:3,title:"Lokale Musik entdecken",category:"Kultur",place:"Mannheim",date:"",description:"Entdecke kleine Konzerte und lokale Musik – eine Idee für alle, die gern gemeinsam Kultur erleben.",emoji:"🎸"},
+ {id:4,title:"Neue Sportgruppe finden",category:"Sport",place:"Ludwigshafen",date:"",description:"Finde eine Sportart, probiere etwas Neues aus und lerne Menschen mit ähnlichen Interessen kennen.",emoji:"⚽"},
+ {id:5,title:"Vereine in deiner Nähe",category:"Vereine",place:"Deine Umgebung",date:"",description:"Ob kreativ, sozial oder sportlich: Informiere dich über Vereine und finde ein Hobby, das zu dir passt.",emoji:"🤝"},
+ {id:6,title:"Festival-Ideen sammeln",category:"Festivals",place:"Rhein-Neckar-Region",date:"",description:"Sammle Ideen für Musik, Kultur und Stadtfeste in der Region und plane den nächsten gemeinsamen Ausflug.",emoji:"🎵"}
+];
+let active="Alle";
+const emojis={Outdoor:"🥾",Sport:"⚽",Kultur:"🎨",Vereine:"🤝",Festivals:"🎵",Spiele:"🎲"};
+function loadUser(){try{return JSON.parse(localStorage.getItem("naitsirihc_events")||"[]")}catch(e){return []}}
+function saveUser(items){try{localStorage.setItem("naitsirihc_events",JSON.stringify(items));return true}catch(e){return false}}
+function allEvents(){return [...loadUser(),...seed]}
+function renderEvents(){
+ const q=(document.getElementById("search").value||"").trim().toLowerCase();
+ const items=allEvents().filter(e=>(active==="Alle"||e.category===active)&&(!q||[e.title,e.place,e.description,e.category].join(" ").toLowerCase().includes(q)));
+ const root=document.getElementById("events");root.innerHTML="";
+ if(!items.length){root.innerHTML='<div class="empty">Keine passenden Aktivitäten gefunden. Versuch einen anderen Suchbegriff oder füge eine neue Aktivität hinzu.</div>';return}
+ items.forEach(e=>{
+  const card=document.createElement("article");card.className="event";
+  const top=document.createElement("div");top.className="event-top";
+  const emoji=document.createElement("span");emoji.className="emoji";emoji.textContent=e.emoji||emojis[e.category]||"✨";
+  const tag=document.createElement("span");tag.className="tag";tag.textContent=e.category;top.append(emoji,tag);
+  const body=document.createElement("div");body.className="event-body";
+  const h=document.createElement("h3");h.textContent=e.title;
+  const meta=document.createElement("div");meta.className="meta";meta.textContent="📍 "+e.place+(e.date?" · 📅 "+e.date:"")+(e.members?" · 👥 "+e.members+" Mitglieder":"");
+  const p=document.createElement("p");p.textContent=e.description;
+  const foot=document.createElement("div");foot.className="event-foot";
+  const note=document.createElement("span");note.className="meta";note.textContent="Offen für Interessierte";
+  const btn=document.createElement("button");btn.className="smallbtn";btn.textContent="Details";btn.onclick=()=>alert(e.title+"\\n\\n"+e.description+"\\n\\nOrt: "+e.place+(e.date?"\\nDatum: "+e.date:"")+"\\n\\nDemo: Kontakt und Anmeldung werden später ergänzt.");
+  foot.append(note,btn);body.append(h,meta,p,foot);card.append(top,body);root.append(card);
+ });
+}
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");active=b.dataset.cat;renderEvents()}));
+document.getElementById("search").addEventListener("input",renderEvents);
+function previewFiles(inputId, targetId, isVideo){
+ const input=document.getElementById(inputId), target=document.getElementById(targetId);
+ input.addEventListener("change",()=>{
+  target.innerHTML="";
+  Array.from(input.files||[]).slice(0,isVideo?1:6).forEach(file=>{
+   if(!file.type.startsWith(isVideo?"video/":"image/"))return;
+   const url=URL.createObjectURL(file);
+   const el=document.createElement(isVideo?"video":"img");
+   el.src=url;
+   if(isVideo){el.controls=true;el.muted=true}
+   el.alt=isVideo?"Videovorschau":"Bildvorschau";
+   target.appendChild(el);
+  });
+ });
+}
+previewFiles("photos","photoPreview",false);
+previewFiles("video","videoPreview",true);
+
+document.getElementById("eventForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const age=Number(document.getElementById("age").value);
+ const membersValue=document.getElementById("members").value;
+ if(!Number.isFinite(age)||age<13||age>120){toast("Bitte gib ein Alter zwischen 13 und 120 Jahren ein.");return}
+ const item={id:Date.now(),title:document.getElementById("title").value.trim(),category:document.getElementById("category").value,place:document.getElementById("place").value.trim(),date:document.getElementById("date").value,description:document.getElementById("description").value.trim(),age:age,members:membersValue?Number(membersValue):null,emoji:emojis[document.getElementById("category").value]};
+ if(!item.title||!item.place||!item.description)return;
+ const items=loadUser();items.unshift(item);
+ if(!saveUser(items)){toast("Speichern war nicht möglich. Prüfe den Browser-Speicher.");return}
+ e.target.reset();
+ document.getElementById("photoPreview").innerHTML="";
+ document.getElementById("videoPreview").innerHTML="";
+ active="Alle";document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x.dataset.cat==="Alle"));renderEvents();toast("Aktivität lokal gespeichert. Medien sind nur Vorschau.");scrollToSection("discover");
+});
+function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.style.display="block";setTimeout(()=>el.style.display="none",3000)}
+function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+function showInfo(){alert("Willkommen bei naitsirihc!\\n\\nDiese erste Version ist ein klickbarer Prototyp mit Beispieldaten. Noch nicht enthalten sind gemeinsame Online-Daten, Nutzerkonten und echter Chat. Diese Funktionen können wir als Nächstes mit einem kostenlosen Backend ergänzen.");}
+renderEvents();
+</script>
+</body></html>
